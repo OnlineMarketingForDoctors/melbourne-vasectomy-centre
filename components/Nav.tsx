@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { clinic, nav } from '@/lib/content';
@@ -31,24 +32,24 @@ export function Nav() {
         }`}
       >
         <div className="mx-auto flex max-w-[1440px] items-center justify-between px-5 py-4 md:px-8 md:py-5">
-          <a href="#top" className="flex items-center gap-3" aria-label={`${clinic.name} home`}>
+          <Link href="/" className="flex items-center gap-3" aria-label={`${clinic.name} home`}>
             <Image src="/images/logo-mark.png" alt="" width={205} height={256} className="h-8 w-auto md:h-9" priority />
             <span className="font-display text-[15px] leading-[1.05] tracking-tight text-paper md:text-base">
               Melbourne
               <br />
               Vasectomy Centre
             </span>
-          </a>
+          </Link>
 
           <nav className="hidden items-center gap-9 lg:flex" aria-label="Primary">
             {nav.map((item) => (
-              <a
+              <Link
                 key={item.href}
                 href={item.href}
                 className="text-sm text-paper/75 transition-colors duration-200 hover:text-mint"
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </nav>
 

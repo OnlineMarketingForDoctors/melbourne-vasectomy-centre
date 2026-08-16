@@ -1,23 +1,7 @@
 // All homepage copy lives here so it can be reviewed and edited in one place.
 // House rule: no em dashes anywhere in this file.
 
-export const clinic = {
-  name: 'Melbourne Vasectomy Centre',
-  shortName: 'MVC',
-  phoneLabel: '1800 SNIPME',
-  phoneDigits: '1800 764 763',
-  phoneHref: 'tel:1800764763',
-  email: 'info@vasectomyaustralia.com.au',
-  bookingHref: '#book',
-};
-
-export const nav = [
-  { label: 'The doctors', href: '#doctors' },
-  { label: 'Procedure', href: '#how' },
-  { label: 'Fees', href: '#fees' },
-  { label: 'Reviews', href: '#reviews' },
-  { label: 'Questions', href: '#faq' },
-];
+export { clinic, nav } from './site';
 
 export const hero = {
   eyebrow: 'No scalpel vasectomy, Melbourne',
@@ -83,15 +67,16 @@ export const doctors = [
     role: 'Vasectomy specialist',
     portrait: '/images/matt-portrait.jpg',
     environmental: '/images/gen-matt-room.jpg',
-    stat: { value: '1,000', unit: 'a year' },
-    claim: 'One of Australia’s foremost vasectomists, with a background in military and rural medicine.',
+    stat: { value: '17,000', unit: 'performed' },
+    claim: 'One of Australia’s foremost vasectomists, with a background in military and aviation medicine.',
     bio: [
       'Dr Valentine completed his medical degree at the University of Adelaide in 2000. After a two year internship and residency at the Royal Adelaide Hospital, he spent five years as a full time Medical Officer in the Royal Australian Air Force.',
       'In 2016 he travelled to the United States to train in the no scalpel vasectomy technique, and now performs upwards of 1,000 vasectomies a year.',
       'He uses gentle techniques that allow a fast recovery with minimal downtime.',
     ],
     facts: [
-      'Upwards of 1,000 vasectomies a year',
+      'Over 17,000 vasectomies performed',
+      'Upwards of 1,000 a year, performing since 2008',
       'Five years as a Medical Officer, Royal Australian Air Force',
       'Trained in the United States in the no scalpel technique',
     ],
