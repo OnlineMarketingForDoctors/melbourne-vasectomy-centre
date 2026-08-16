@@ -1,0 +1,14 @@
+# This site is intentionally kept out of search results.
+#
+# Crawling is ALLOWED on purpose. De-indexing is enforced by the
+# "X-Robots-Tag: noindex, nofollow" response header (see next.config.mjs)
+# and by the robots metadata in the root layout.
+#
+# A blanket "Disallow: /" here would be counterproductive: it stops crawlers
+# fetching the pages at all, so they never see the noindex directive, and a
+# URL discovered via an external link can stay listed indefinitely.
+#
+# Do not add Disallow rules while the noindex directives are in place.
+
+User-agent: *
+Allow: /
