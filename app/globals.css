@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+
+@theme {
+  /* Palette sampled from the MVC logo mark and theme stylesheet. */
+  --color-ink: #12211e;
+  --color-forest: #163130;
+  --color-forest-deep: #0c1b19;
+  --color-mint: #94d6a7;
+  --color-teal: #5bbcb0;
+  --color-leaf: #97c354;
+  --color-gold: #c4b963;
+  --color-coral: #ff7357;
+  --color-paper: #f4f7f3;
+  --color-sand: #ede7da;
+  --color-haze: #daf1e1;
+
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-mono-face), ui-monospace, monospace;
+
+  --text-mega: clamp(3.2rem, 11vw, 10.5rem);
+  --text-display: clamp(2.4rem, 6.4vw, 5.6rem);
+  --text-title: clamp(1.9rem, 3.6vw, 3.2rem);
+  --text-lede: clamp(1.05rem, 1.5vw, 1.4rem);
+
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-synthesis-weight: none;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-mint);
+    color: var(--color-forest-deep);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-coral);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* Keep anchor targets clear of the fixed header. */
+  section[id] {
+    scroll-margin-top: 88px;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: -0.025em;
+    line-height: 0.98;
+  }
+}
+
+@layer utilities {
+  .measure {
+    max-width: 62ch;
+  }
+
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: clamp(0.5938rem, 2.1vw, 0.6875rem);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+  }
+
+  /* Signature: the caseload ledger. A field of hairline tally marks whose
+     density stands in for surgical volume. Used as a section rule. */
+  .ledger-rule {
+    background-image: repeating-linear-gradient(
+      to right,
+      currentColor 0,
+      currentColor 1px,
+      transparent 1px,
+      transparent 7px
+    );
+  }
+
+  .ledger-dense {
+    background-image: repeating-linear-gradient(
+      to right,
+      currentColor 0,
+      currentColor 1px,
+      transparent 1px,
+      transparent 4px
+    );
+  }
+
+  .grain::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.28;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
