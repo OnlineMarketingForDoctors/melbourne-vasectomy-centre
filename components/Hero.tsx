@@ -25,7 +25,7 @@ export function Hero() {
                 fill
                 priority
                 sizes="100vw"
-                className="hidden object-cover sm:block"
+                className="hidden object-cover object-[center_22%] sm:block"
               />
               <Image
                 src="/images/gen-duo-vertical.jpg"
@@ -37,10 +37,10 @@ export function Hero() {
               />
             </motion.div>
 
-            <div className="absolute inset-0 bg-forest-deep/45 lg:hidden" />
-            <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/92 via-forest-deep/45 to-forest-deep/35 lg:bg-gradient-to-r lg:from-forest-deep/90 lg:via-forest-deep/45 lg:to-transparent" />
+            <div className="absolute inset-0 bg-forest-deep/38" />
+            <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/20 to-forest-deep/50" />
 
-            <div className="absolute inset-0 flex flex-col justify-end p-6 md:p-10 lg:justify-center lg:p-14">
+            <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center md:p-10 lg:justify-center lg:p-14">
               <motion.p
                 className="eyebrow mb-5 text-mint"
                 initial={{ opacity: 0 }}
@@ -55,7 +55,7 @@ export function Hero() {
               </h1>
 
               <motion.p
-                className="measure mt-6 max-w-[46ch] text-paper/80 lg:mt-8"
+                className="measure mx-auto mt-6 max-w-[48ch] text-paper/80 lg:mt-8"
                 style={{ fontSize: 'var(--text-lede)' }}
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -65,7 +65,7 @@ export function Hero() {
               </motion.p>
 
               <motion.div
-                className="mt-8 flex flex-wrap items-center gap-3 lg:mt-10"
+                className="mt-8 flex flex-wrap items-center justify-center gap-3 lg:mt-10"
                 initial={{ opacity: 0, y: 14 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.9, delay: 0.9 }}
