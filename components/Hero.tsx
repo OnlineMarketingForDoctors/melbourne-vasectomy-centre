@@ -18,7 +18,7 @@ export function Hero() {
       <div className="mx-auto max-w-[1440px] md:px-8">
         <div className="relative overflow-hidden md:rounded-[34px]">
           {/* Image. Full bleed on phones, inset and rounded from tablet up. */}
-          <div className="relative h-[56vh] min-h-[420px] w-full overflow-hidden sm:h-auto sm:min-h-0 sm:aspect-[16/10] lg:aspect-auto lg:min-h-[760px]">
+          <div className="relative aspect-[4/3] w-full overflow-hidden sm:aspect-[16/10] lg:aspect-auto lg:min-h-[760px]">
             <motion.div
               /* The source is wider than the frame, so it fills on height and
                  object-position has no vertical effect. The crop comes from this
@@ -33,15 +33,7 @@ export function Hero() {
                 fill
                 priority
                 sizes="100vw"
-                className="hidden object-cover sm:block"
-              />
-              <Image
-                src="/images/gen-duo-vertical.jpg"
-                alt="Dr Geoff Cashion and Dr Matt Valentine at the Melbourne Vasectomy Centre"
-                fill
-                priority
-                sizes="100vw"
-                className="object-cover object-[58%_center] sm:hidden"
+                className="object-cover"
               />
             </motion.div>
 
