@@ -5,7 +5,7 @@ export { clinic, nav } from './site';
 
 export const hero = {
   eyebrow: 'No scalpel vasectomy, Melbourne',
-  titleLines: ['Permanent.', 'Safe.', 'Sorted in', '15 minutes.'],
+  titleLines: ['Permanent. Safe.', 'Sorted in 15 minutes.'],
   lede:
     'A no scalpel vasectomy under local anaesthetic, performed by two of the most experienced vasectomists in Australia. Most men are back to normal within a week.',
   primaryCta: 'Book online',
