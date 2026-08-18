@@ -32,10 +32,13 @@ export function Hero() {
                 alt="Dr Geoff Cashion and Dr Matt Valentine at the Melbourne Vasectomy Centre"
                 fill
                 priority
-                sizes="100vw"
+                sizes="(max-width: 640px) 240vw, (max-width: 1024px) 140vw, 100vw"
                 className="object-cover"
               />
             </motion.div>
+
+            {/* Below lg the copy sits under the image, so fade the join. */}
+            <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent via-forest-deep/70 to-forest-deep lg:hidden" />
 
             {/* Scrim only where the copy sits over the image. */}
             <div className="absolute inset-0 hidden bg-forest-deep/38 lg:block" />

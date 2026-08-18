@@ -24,6 +24,7 @@ export default function AboutRoute() {
           image="/images/gen-duo-bench.jpg"
           imageMobile="/images/gen-duo-vertical.jpg"
           imageAlt="Dr Geoff Cashion and Dr Matt Valentine reviewing instruments together"
+          mirror
         />
         <AboutIntro />
         {aboutPage.doctors.map((doctor, i) => (

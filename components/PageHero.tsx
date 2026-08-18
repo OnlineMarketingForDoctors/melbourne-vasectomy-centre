@@ -17,6 +17,7 @@ export function PageHero({
   image,
   imageAlt,
   imageMobile,
+  mirror = false,
   children,
 }: {
   eyebrow: string;
@@ -25,6 +26,7 @@ export function PageHero({
   image: string;
   imageAlt: string;
   imageMobile?: string;
+  mirror?: boolean;
   children?: ReactNode;
 }) {
   const ref = useRef<HTMLElement>(null);
@@ -44,8 +46,8 @@ export function PageHero({
                 alt={imageAlt}
                 fill
                 priority
-                sizes="100vw"
-                className={imageMobile ? 'hidden object-cover sm:block' : 'object-cover'}
+                sizes="(max-width: 640px) 200vw, (max-width: 1024px) 130vw, 100vw"
+                className={`${imageMobile ? 'hidden sm:block' : ''} object-cover ${mirror ? '-scale-x-100' : ''}`}
               />
               {imageMobile && (
                 <Image
@@ -53,8 +55,8 @@ export function PageHero({
                   alt={imageAlt}
                   fill
                   priority
-                  sizes="100vw"
-                  className="object-cover sm:hidden"
+                  sizes="(max-width: 640px) 120vw, 100vw"
+                  className={`object-cover sm:hidden ${mirror ? '-scale-x-100' : ''}`}
                 />
               )}
             </motion.div>
