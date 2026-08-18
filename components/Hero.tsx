@@ -11,14 +11,17 @@ export function Hero() {
   const reduce = useReducedMotion();
   const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] });
   const imgY = useTransform(scrollYProgress, [0, 1], ['0%', reduce ? '0%' : '12%']);
-  const imgScale = useTransform(scrollYProgress, [0, 1], [1, reduce ? 1 : 1.08]);
+  const imgScale = useTransform(scrollYProgress, [0, 1], [1.24, reduce ? 1.24 : 1.33]);
 
   return (
     <section ref={ref} id="top" className="relative bg-forest-deep pb-16 pt-24 md:pb-20 md:pt-28">
       <div className="mx-auto max-w-[1440px] px-4 md:px-8">
         <div className="relative overflow-hidden rounded-[22px] md:rounded-[34px]">
-          <div className="relative min-h-[560px] w-full sm:min-h-[600px] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[760px]">
-            <motion.div style={{ y: imgY, scale: imgScale }} className="absolute inset-0">
+          <div className="relative min-h-[730px] w-full sm:min-h-[640px] sm:aspect-[16/10] lg:aspect-auto lg:min-h-[760px]">
+            <motion.div
+              style={{ y: imgY, scale: imgScale, transformOrigin: 'center 20%' }}
+              className="absolute inset-0"
+            >
               <Image
                 src="/images/gen-duo.jpg"
                 alt="Dr Geoff Cashion and Dr Matt Valentine at the Melbourne Vasectomy Centre"
@@ -40,7 +43,7 @@ export function Hero() {
             <div className="absolute inset-0 bg-forest-deep/38" />
             <div className="absolute inset-0 bg-gradient-to-t from-forest-deep/85 via-forest-deep/20 to-forest-deep/50" />
 
-            <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center md:p-10 lg:justify-center lg:p-14">
+            <div className="absolute inset-0 flex flex-col items-center justify-end p-6 text-center md:p-10 lg:p-14 lg:pb-16">
               <motion.p
                 className="eyebrow mb-5 text-mint"
                 initial={{ opacity: 0 }}
