@@ -22,10 +22,10 @@ export const ledger = [
     note: 'Between our two doctors',
   },
   {
-    value: 15000,
+    value: 25000,
     suffix: '+',
-    label: 'Performed by Dr Cashion',
-    note: 'Across his career to date',
+    label: 'Vasectomies each',
+    note: 'Dr Cashion and Dr Valentine',
   },
   {
     value: 99,
@@ -53,10 +53,10 @@ export const doctors = [
     bio: [
       'Dr Cashion is a Specialist GP and the founder of Vasectomy Australia, the country’s largest provider of no scalpel vasectomy.',
       'He trained in the United States under one of the world’s leading vasectomists, learning the no scalpel technique to offer the best possible procedure for men seeking permanent contraception.',
-      'He regularly presents at national and international vasectomy conferences, and has performed more than 15,000 procedures to date.',
+      'He regularly presents at national and international vasectomy conferences, and has performed more than 25,000 procedures to date.',
     ],
     facts: [
-      'Over 15,000 vasectomies performed',
+      'Over 25,000 vasectomies performed',
       'Trained in the United States in the no scalpel technique',
       'Presents at national and international vasectomy conferences',
     ],
@@ -67,7 +67,7 @@ export const doctors = [
     role: 'Vasectomy specialist',
     portrait: '/images/matt-portrait.jpg',
     environmental: '/images/gen-matt-room.jpg',
-    stat: { value: '17,000', unit: 'performed' },
+    stat: { value: '25,000', unit: 'performed' },
     claim: 'One of Australia’s foremost vasectomists, with a background in military and aviation medicine.',
     bio: [
       'Dr Valentine completed his medical degree at the University of Adelaide in 2000. After a two year internship and residency at the Royal Adelaide Hospital, he spent five years as a full time Medical Officer in the Royal Australian Air Force.',
@@ -75,7 +75,7 @@ export const doctors = [
       'He uses gentle techniques that allow a fast recovery with minimal downtime.',
     ],
     facts: [
-      'Over 17,000 vasectomies performed',
+      'Over 25,000 vasectomies performed',
       'Upwards of 1,000 a year, performing since 2008',
       'Five years as a Medical Officer, Royal Australian Air Force',
       'Trained in the United States in the no scalpel technique',

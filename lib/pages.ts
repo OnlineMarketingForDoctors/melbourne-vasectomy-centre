@@ -27,11 +27,11 @@ export const aboutPage = {
       bio: [
         'Dr Cashion is a Specialist GP and the founder of Vasectomy Australia, the country’s largest provider of no scalpel vasectomy.',
         'He trained in the United States under one of the world’s leading vasectomists, learning the no scalpel technique in order to offer the best available procedure to men seeking permanent contraception.',
-        'He has performed more than 15,000 vasectomies to date, and continues to present at national and international vasectomy conferences as part of a commitment to lifelong learning.',
+        'He has performed more than 25,000 vasectomies to date, and continues to present at national and international vasectomy conferences as part of a commitment to lifelong learning.',
       ],
       stats: [
         { value: '4,000', label: 'Vasectomies a year' },
-        { value: '15,000+', label: 'Performed to date' },
+        { value: '25,000+', label: 'Performed to date' },
       ],
       facts: [
         'Founder of Vasectomy Australia',
@@ -56,7 +56,7 @@ export const aboutPage = {
         'He is a Fellow of the Royal Australian College of General Practitioners and holds the position of Designated Aviation Medical Examiner with the Civil Aviation Safety Authority.',
       ],
       stats: [
-        { value: '17,000+', label: 'Vasectomies performed' },
+        { value: '25,000+', label: 'Vasectomies performed' },
         { value: '2008', label: 'Performing since' },
       ],
       facts: [
