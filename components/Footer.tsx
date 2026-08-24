@@ -62,9 +62,21 @@ export function Footer() {
             © {new Date().getFullYear()} {clinic.name}. All rights reserved.
           </p>
           <p className="text-xs text-paper/45">
-            Vasectomy is a permanent form of contraception. Talk to your doctor about whether it is right for you.
+            Powered by{' '}
+            <a
+              href="https://onlinemarketingfordoctors.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-paper/70 underline decoration-paper/25 underline-offset-4 transition-colors hover:text-mint hover:decoration-mint"
+            >
+              Online Marketing For Doctors
+            </a>
           </p>
         </div>
+
+        <p className="mt-5 text-xs leading-relaxed text-paper/35">
+          Vasectomy is a permanent form of contraception. Talk to your doctor about whether it is right for you.
+        </p>
       </div>
     </footer>
   );
