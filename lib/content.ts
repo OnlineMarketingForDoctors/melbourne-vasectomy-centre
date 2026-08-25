@@ -34,7 +34,7 @@ export const ledger = [
     note: 'Greater than 99% effective',
   },
   {
-    value: 182,
+    value: 612,
     suffix: '',
     label: 'Google reviews',
     note: 'Rated excellent',
@@ -196,7 +196,7 @@ export const fees = {
 
 export const reviewsMeta = {
   rating: 'Excellent',
-  count: 182,
+  count: 612,
   source: 'Google',
 };
 
