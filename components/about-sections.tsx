@@ -60,6 +60,15 @@ export function DoctorProfile({ doctor, index }: { doctor: Doctor; index: number
               <h2 className="mt-4 font-display" style={{ fontSize: 'var(--text-display)' }}>
                 {doctor.name}
               </h2>
+              {/* AHPRA requires the practitioner's registration number wherever
+                  a regulated health service is advertised alongside them. */}
+              <p
+                className={`mt-4 font-mono text-[11px] uppercase tracking-[0.14em] ${
+                  dark ? 'text-paper/50' : 'text-ink/50'
+                }`}
+              >
+                AHPRA reg. {doctor.ahpra}
+              </p>
             </div>
             <div className="flex gap-10">
               {doctor.stats.map((s) => (

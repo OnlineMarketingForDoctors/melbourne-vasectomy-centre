@@ -60,6 +60,11 @@ function DoctorPanel({ doctor, index }: { doctor: (typeof doctors)[number]; inde
             <h3 className="mt-4 font-display text-ink" style={{ fontSize: 'var(--text-title)' }}>
               {doctor.name}
             </h3>
+            {/* AHPRA requires the practitioner's registration number wherever
+                a regulated health service is advertised alongside them. */}
+            <p className="mt-3 font-mono text-[11px] uppercase tracking-[0.14em] text-ink/45">
+              AHPRA reg. {doctor.ahpra}
+            </p>
           </Reveal>
 
           <Reveal delay={0.08}>
