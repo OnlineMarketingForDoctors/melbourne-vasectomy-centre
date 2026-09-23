@@ -34,10 +34,10 @@ export const ledger = [
     note: 'Greater than 99% effective',
   },
   {
-    value: 612,
-    suffix: '',
-    label: 'Google reviews',
-    note: 'Rated excellent',
+    value: 48,
+    suffix: 'hr',
+    label: 'Consult to procedure',
+    note: 'Usually within 48 hours',
   },
 ];
 
@@ -195,57 +195,6 @@ export const fees = {
   policyLabel: 'Read our cancellation policy',
   policyHref: '#cancellation',
 };
-
-export const reviewsMeta = {
-  rating: 'Excellent',
-  count: 612,
-  source: 'Google',
-};
-
-export const reviews = [
-  {
-    name: 'Ian Kim',
-    body: 'Very satisfying with the relaxed atmosphere and short surgery time. Would recommend.',
-  },
-  {
-    name: 'P LW',
-    body:
-      'I was quite worried about this procedure but it was honestly nothing to worry about. Marcel is a great guy and it was pretty painless and over in no time. I could work straight afterwards no worries at all. Thank you very much!',
-  },
-  {
-    name: 'Adam Todorov',
-    body:
-      'Highly recommend Marcel and the team. They are very professional and the procedure was undertaken very quickly with no pain or discomfort during and afterwards. Many thanks Marcel.',
-  },
-  {
-    name: 'Brad L',
-    body: 'Super friendly, easy quick no pain makes you feel comfortable',
-  },
-  {
-    name: 'Chris Williams',
-    body:
-      'The whole process could not have been better in my case. Dr Marcel and Grace did an amazing job. The video I watched prior was very informative and what was discussed happened in the clinic so could not have been more happier.',
-  },
-  {
-    name: 'Simon Herod',
-    body: 'Great service, quick painless and Marcel and Amy were very friendly.',
-  },
-  {
-    name: 'Fraser Mackie',
-    body:
-      'Amazingly professional, respectful, efficient and kind. I cannot recommend Vasectomy Australia enough! As a professional NDIS support worker I know the value of preserving a client’s dignity.',
-  },
-  {
-    name: 'Gustavo K.',
-    body:
-      'Just came out of the procedure, was very quick and easy. Mainly painless, apart from a little pressure at the beginning. Dr Marcel and Amy were very nice and helpful.',
-  },
-  {
-    name: 'Johnny Balazo',
-    body:
-      'Really great team here. Procedure was over before I knew it. Enjoyed the chat while the operation was happening. Recovery is already going great.',
-  },
-];
 
 export const faqs = [
   {
