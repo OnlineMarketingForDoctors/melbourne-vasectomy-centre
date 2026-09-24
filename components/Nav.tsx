@@ -62,6 +62,8 @@ export function Nav() {
             </a>
             <a
               href={clinic.bookingHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden rounded-full bg-coral px-5 py-2.5 text-sm font-medium text-forest-deep transition-colors duration-300 hover:bg-[#ff8a70] sm:block"
             >
               Book online
@@ -117,6 +119,8 @@ export function Nav() {
             <div className="mt-10 flex flex-col gap-4">
               <a
                 href={clinic.bookingHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="rounded-full bg-coral px-6 py-4 text-center font-medium text-forest-deep"
               >

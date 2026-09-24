@@ -50,6 +50,8 @@ export function Footer() {
             </ul>
             <a
               href={clinic.bookingHref}
+              target="_blank"
+              rel="noopener noreferrer"
               className="mt-7 inline-flex rounded-full bg-coral px-6 py-3 text-sm font-medium text-forest-deep transition-colors hover:bg-[#ff8a70]"
             >
               Book online

@@ -148,9 +148,13 @@ export function ArrowCta({
     paper: 'bg-paper text-forest-deep hover:bg-white',
   };
 
+  const external = /^https?:\/\//.test(href);
+
   return (
     <a
       href={href}
+      target={external ? '_blank' : undefined}
+      rel={external ? 'noopener noreferrer' : undefined}
       className={`group inline-flex items-center gap-3 rounded-full px-7 py-4 text-sm font-medium tracking-wide transition-colors duration-300 ${tones[tone]} ${className}`}
     >
       {children}
