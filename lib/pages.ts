@@ -218,7 +218,7 @@ export const patientPage = {
 
 export const locationsPage = {
   eyebrow: 'Locations',
-  titleLines: ['Prahran, and', 'four more across', 'Victoria'],
+  titleLines: ['Prahran, and', 'five more across', 'Victoria'],
   lede:
     'Our main clinic is on Commercial Road in Prahran. We also run satellite clinics each month which may be closer to home.',
 };

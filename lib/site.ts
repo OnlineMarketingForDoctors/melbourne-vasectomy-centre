@@ -71,6 +71,16 @@ export const satelliteLocations = [
       'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=302467&product=3529502%3ASV&staff=459829',
   },
   {
+    name: 'Emu Creek Health Professionals, Bendigo',
+    address: '955 Wellington Street, Strathfieldsaye VIC 3551',
+    note: 'Central Victoria, convenient for Bendigo, Strathfieldsaye and Castlemaine.',
+    primary: false,
+    image: '/images/gen-regional.jpg',
+    mapsLink: 'https://g.page/r/Ce6TYoR6q2H7EBM',
+    bookingHref:
+      'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=324796&product=3940899%3ASV&staff=459829',
+  },
+  {
     name: 'Gladstone Park Family Medical Centre',
     address: 'Shop 102, Gladstone Park Shopping Centre, Gladstone Park Drive, Gladstone Park VIC 3043',
     note: 'Northern suburbs, close to Tullamarine and Broadmeadows.',

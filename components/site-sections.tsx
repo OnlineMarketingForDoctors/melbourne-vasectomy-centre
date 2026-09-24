@@ -165,7 +165,7 @@ export function LocationList() {
         <Reveal>
           <p className="eyebrow text-mint">Where we operate</p>
           <h2 className="mt-5 max-w-[18ch] font-display" style={{ fontSize: 'var(--text-display)' }}>
-            One home clinic, four satellites
+            One home clinic, five satellites
           </h2>
           <LedgerFill className="mt-10 h-3 text-mint/40" dense />
         </Reveal>
