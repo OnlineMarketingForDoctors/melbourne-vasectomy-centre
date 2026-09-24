@@ -8,7 +8,7 @@ export const clinic = {
   email: 'info@vasectomyaustralia.com.au',
   facebook: 'https://www.facebook.com/vasectomyaustralia',
   bookingHref:
-    'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=199369&product=2909739:SV',
+    'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=199369&product=2909739%3ASV',
   address: {
     line1: 'First Floor',
     line2: '54 Commercial Road',
@@ -37,6 +37,8 @@ export const satelliteLocations = [
     note: 'Our main clinic, five minutes from the Alfred and a short walk from Prahran station.',
     primary: true,
     image: '/images/gen-clinic-exterior.jpg',
+    mapsLink: clinic.mapsLink,
+    bookingHref: clinic.bookingHref,
   },
   {
     name: 'Casey Medical Centre',
@@ -44,13 +46,19 @@ export const satelliteLocations = [
     note: 'South east growth corridor, convenient for Berwick, Cranbourne and Pakenham.',
     primary: false,
     image: '/images/gen-regional.jpg',
+    mapsLink: 'https://g.page/r/CdqLzUrRvkKtEBM',
+    bookingHref:
+      'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=294902&product=3390310%3ASV&staff=459829',
   },
   {
-    name: 'Vasectomy Australia Geelong',
-    address: '141 High Street, Belmont VIC 3216',
+    name: 'Amara Medical Geelong',
+    address: 'Shop 1A, 110-112 High Street, Belmont VIC 3216',
     note: 'For patients across Geelong, the Bellarine and the Surf Coast.',
     primary: false,
     image: '/images/gen-regional.jpg',
+    mapsLink: 'https://g.page/r/CbuV67VYChXoEBM',
+    bookingHref:
+      'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=288461&product=3279684%3ASV',
   },
   {
     name: 'Carn-Brae Clinic, Ballarat',
@@ -58,13 +66,19 @@ export const satelliteLocations = [
     note: 'Serving Ballarat and the western district.',
     primary: false,
     image: '/images/gen-regional.jpg',
+    mapsLink: 'https://g.page/r/CVwpVwt2pz_vEBM',
+    bookingHref:
+      'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=302467&product=3529502%3ASV&staff=459829',
   },
   {
-    name: 'Gladstone Park',
-    address: 'Gladstone Park Drive, Gladstone Park VIC 3043',
+    name: 'Gladstone Park Family Medical Centre',
+    address: 'Shop 102, Gladstone Park Shopping Centre, Gladstone Park Drive, Gladstone Park VIC 3043',
     note: 'Northern suburbs, close to Tullamarine and Broadmeadows.',
     primary: false,
     image: '/images/gen-regional.jpg',
+    mapsLink: 'https://g.page/r/CbmUaTcVOk5wEBM',
+    bookingHref:
+      'https://bookings.gettimely.com/vasectomyaustralia/bb/book?location=173697&product=1833368%3ASV&staff=459829',
   },
 ];
 

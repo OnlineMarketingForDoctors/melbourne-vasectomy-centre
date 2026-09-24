@@ -174,31 +174,59 @@ export function LocationList() {
           <div className="lg:col-span-6">
             <ul>
               {satelliteLocations.map((loc, i) => (
-                <li key={loc.name}>
-                  <button
-                    type="button"
+                <li key={loc.name} className="border-t border-paper/15 last:border-b">
+                  <motion.div
                     onMouseEnter={() => setActive(i)}
-                    onFocus={() => setActive(i)}
-                    onClick={() => setActive(i)}
-                    aria-current={active === i}
-                    className="w-full border-t border-paper/15 py-6 text-left last:border-b"
+                    animate={{ opacity: active === i ? 1 : 0.55 }}
+                    transition={{ duration: 0.35 }}
+                    className="py-6"
                   >
-                    <motion.div animate={{ opacity: active === i ? 1 : 0.55 }} transition={{ duration: 0.35 }}>
-                      <div className="flex items-baseline gap-4">
-                        <span className="font-mono text-[11px] tabular-nums text-mint">
-                          {String(i + 1).padStart(2, '0')}
+                    <div className="flex items-baseline gap-4">
+                      <span className="font-mono text-[11px] tabular-nums text-mint">
+                        {String(i + 1).padStart(2, '0')}
+                      </span>
+                      <span className="font-display text-2xl md:text-3xl">{loc.name}</span>
+                      {loc.primary && (
+                        <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.16em] text-coral">
+                          Main clinic
                         </span>
-                        <span className="font-display text-2xl md:text-3xl">{loc.name}</span>
-                        {loc.primary && (
-                          <span className="ml-auto font-mono text-[10px] uppercase tracking-[0.16em] text-coral">
-                            Main clinic
-                          </span>
-                        )}
-                      </div>
-                      <p className="mt-2 pl-9 font-mono text-xs text-paper/55">{loc.address}</p>
-                      <p className="measure mt-2 pl-9 text-sm text-paper/70">{loc.note}</p>
-                    </motion.div>
-                  </button>
+                      )}
+                    </div>
+                    <p className="mt-2 pl-9 font-mono text-xs text-paper/55">{loc.address}</p>
+                    <p className="measure mt-2 pl-9 text-sm text-paper/70">{loc.note}</p>
+
+                    <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2 pl-9">
+                      <a
+                        href={loc.bookingHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onFocus={() => setActive(i)}
+                        className="group inline-flex items-center gap-2 text-sm font-medium text-coral transition-colors hover:text-[#ff8a70]"
+                      >
+                        Book at this clinic
+                        <svg width="14" height="9" viewBox="0 0 16 10" fill="none" aria-hidden>
+                          <path
+                            d="M0 5h14M10 1l4 4-4 4"
+                            stroke="currentColor"
+                            strokeWidth="1.4"
+                            className="transition-transform duration-300 group-hover:translate-x-1"
+                          />
+                        </svg>
+                      </a>
+                      <a
+                        href={loc.mapsLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onFocus={() => setActive(i)}
+                        className="inline-flex items-center gap-2 text-sm text-paper/60 underline decoration-paper/25 underline-offset-4 transition-colors hover:text-mint hover:decoration-mint"
+                      >
+                        View on Google
+                        <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden>
+                          <path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" strokeWidth="1.5" />
+                        </svg>
+                      </a>
+                    </div>
+                  </motion.div>
                 </li>
               ))}
             </ul>
@@ -215,8 +243,16 @@ export function LocationList() {
                   <p className="mt-1 font-mono text-xs text-mint">{current.address}</p>
                 </div>
               </div>
-              <div className="mt-6">
-                <ArrowCta href={clinic.bookingHref}>Book at this clinic</ArrowCta>
+              <div className="mt-6 flex flex-wrap items-center gap-5">
+                <ArrowCta href={current.bookingHref}>Book at this clinic</ArrowCta>
+                <a
+                  href={current.mapsLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm text-paper/60 underline decoration-paper/25 underline-offset-4 transition-colors hover:text-mint hover:decoration-mint"
+                >
+                  View on Google
+                </a>
               </div>
             </div>
           </div>
