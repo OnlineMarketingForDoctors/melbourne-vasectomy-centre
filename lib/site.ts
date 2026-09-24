@@ -19,7 +19,7 @@ export const clinic = {
   mapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3150.9724051577036!2d144.99036447652261!3d-37.837531871969695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad61b6da1fbda21%3A0x81d6ef93a9a6a042!2sVasectomy%20Australia%20-%20Melbourne%20Vasectomy%20Centre!5e0!3m2!1sen!2sau!4v1710357559599!5m2!1sen!2sau',
   mapsLink:
-    'https://www.google.com/maps/place/Vasectomy+Australia+-+Melbourne+Vasectomy+Centre/@-37.8375319,144.9929394,17z',
+    'https://www.google.com/maps/place/Vasectomy+Australia+-+Melbourne+Vasectomy+Centre/@-37.8461316,144.9878072,17z/data=!3m1!4b1!4m6!3m5!1s0x6ad61b6da1fbda21:0x81d6ef93a9a6a042!8m2!3d-37.8461316!4d144.9878072!16s%2Fg%2F11fn750060?hl=en&entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D',
 };
 
 export const nav = [
